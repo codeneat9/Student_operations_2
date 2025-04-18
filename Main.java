@@ -38,3 +38,8 @@ public class Main {
                 default -> System.out.println("Invalid choice!");
             }
 
+        } while (choice != 0);
+
+        sc.close();
+    }
+}
