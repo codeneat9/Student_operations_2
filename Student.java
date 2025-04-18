@@ -11,3 +11,7 @@ public class Student {
         this.marks = marks;
     }
 
+    public void display() {
+        System.out.println("PRN: " + prn + ", Name: " + name + ", DOB: " + dob + ", Marks: " + marks);
+    }
+}
