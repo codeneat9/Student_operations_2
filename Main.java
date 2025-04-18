@@ -26,3 +26,15 @@ public class Main {
             choice = sc.nextInt();
             sc.nextLine(); // clear buffer
 
+            switch (choice) {
+                case 1 -> manager.addStudent(sc);
+                case 2 -> manager.displayStudents();
+                case 3 -> manager.searchByPRN(sc);
+                case 4 -> manager.searchByName(sc);
+                case 5 -> manager.searchByPosition(sc);
+                case 6 -> manager.updateStudent(sc);
+                case 7 -> manager.deleteStudent(sc);
+                case 0 -> System.out.println("Exiting...");
+                default -> System.out.println("Invalid choice!");
+            }
+
